@@ -61,3 +61,6 @@ TagManager:
   - name: Above
     uniqueID: 961700441
     locked: 0
+  - name: Battle
+    uniqueID: 1850048079
+    locked: 0
