@@ -12,6 +12,7 @@ namespace MoreMountains.TopDownEngine
 
         public Camera worldCamera;
         public Character _player;
+        public GameObject battle;
 
         // Start is called before the first frame update
         void Start()
@@ -29,6 +30,7 @@ namespace MoreMountains.TopDownEngine
         {
             _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
             _player.Freeze();
+            Object.Instantiate(battle, transform);
             worldCamera.gameObject.SetActive(false);
         }
     }
