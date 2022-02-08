@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 22200000}
   - component: {fileID: 11408034}
   - component: {fileID: 11408032}
-  m_Layer: 5
+  m_Layer: 24
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,12 +91,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 11400004}
   - component: {fileID: 11400000}
   - component: {fileID: 11400008}
-  m_Layer: 5
+  m_Layer: 24
   m_Name: SelectionItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,8 +172,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ddbb7b1af02ffcf409d4946c8c2b684a, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: aba8387b66667324bb6545bacd3c562b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

@@ -88,19 +88,27 @@ MonoBehaviour:
       debugIndex: 12
       strings:
       - 
+      - Loup
+      - neutral
       - 
       - 
       - 
       - 
       - 
-      - 
-      - 
-      - Wolf wolf
+      - Hmm? What does it say here?
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 7
       debugIndex: 13
+      strings:
+      - CharacterOff
+      - Loup
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 14
       strings:
       - 
       - 
@@ -110,12 +118,365 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "Don\u2019t pet the wolf"
+      - KEEP OFF (or else)
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 14
+    - rowIndex: 9
+      debugIndex: 15
+      strings:
+      - 
+      - Loup
+      - neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Now that\u2019s a rude sign\u2026"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 16
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 19
+      strings:
+      - '*ScenarioC'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 20
+      strings:
+      - 
+      - Kia
+      - 
+      - Right
+      - 
+      - 
+      - 
+      - 
+      - There you are, Loup! I was looking everywhere for you.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 21
+      strings:
+      - 
+      - Loup
+      - 
+      - Left
+      - 
+      - 
+      - 
+      - 
+      - "Oh hey, I just needed some time for myself\u2026"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 22
+      strings:
+      - 
+      - Kia
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "I see\u2026 I was hoping that you could come with me."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - -500
+      - -300
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 23
+      strings:
+      - 
+      - Kia
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - ...But if you are busy, I can go by myself!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - -500
+      - -390
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 24
+      strings:
+      - 
+      - Kia
+      - <Off>
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - -500
+      - -480
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 25
+      strings:
+      - 
+      - Loup
+      - <Off>
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Oof, that\u2019s not what I meant\u2026 I should probably <color=orange>apologize</color>."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - -500
+      - -570
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 26
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 29
+      strings:
+      - '*KiaTalk'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 30
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - <i>Kia seems deep in thought, and does not seem to notice me at first. Maybe
+        I should speak up.</i>
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 31
+      strings:
+      - 
+      - Kia
+      - 
+      - Right
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 32
+      strings:
+      - 
+      - Loup
+      - 
+      - Left
+      - 
+      - 
+      - 
+      - 
+      - "Hey, Kia\u2026"
+      - Input
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 33
+      strings:
+      - Selection
+      - '*Apology'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Sorry, I didn\u2019t mean to come off as rude"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 24
+      debugIndex: 34
+      strings:
+      - Selection
+      - '*Destination'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Go with you? Where?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 35
+      strings:
+      - Selection
+      - '*Nothing'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "<i>Huh, what\u2019s that smell?</i> <color=green><ruby=18>Perception</ruby></color>"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 26
+      debugIndex: 36
+      strings:
+      - Selection
+      - '*WOW'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - WOW
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 27
+      debugIndex: 37
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 28
+      debugIndex: 39
+      strings:
+      - '*Apology'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 29
+      debugIndex: 41
+      strings:
+      - '*Destination'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 30
+      debugIndex: 43
+      strings:
+      - '*Nothing'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 31
+      debugIndex: 45
+      strings:
+      - '*Shop'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 32
+      debugIndex: 46
+      strings:
+      - 
+      - Morshu
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Lamp oil, rope, bombs? You want it? It\u2019s yours my friend. As long as
+        you have enough rubies."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 33
+      debugIndex: 47
+      strings:
+      - 
+      - Morshu
+      - Morshu Sell
+      - 
+      - 
+      - 
+      - 
+      - 
+      - BRUH
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 34
+      debugIndex: 48
       strings:
       - EndScenario
       isEmpty: 0
@@ -123,7 +484,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Loup/Loup.xls:Start
     type: 1
-    textLength: 179
+    textLength: 1137
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -156,9 +517,83 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Loup
+      - 
+      - neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - loup.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Kia
+      - 
+      - neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Kia/kia.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - Morshu
+      - 
+      - 
+      - 
+      - 30
+      - 
+      - 
+      - 3
+      - 
+      - Morshu/Morshu.prefab
+      - 
+      - 2DPrefab
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Loup/Loup.xls:Character
     type: 1
-    textLength: 154
+    textLength: 231
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -227,9 +662,42 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - Center
+      - Character
+      - 0
+      - 0
+      - 200
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - Left
+      - Character
+      - -250
+      - 0
+      - 190
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - Right
+      - Character
+      - 250
+      - 0
+      - 190
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Loup/Loup.xls:Layer
     type: 1
-    textLength: 109
+    textLength: 171
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -606,19 +1074,27 @@ MonoBehaviour:
       debugIndex: 12
       strings:
       - 
+      - Loup
+      - neutral
       - 
       - 
       - 
       - 
       - 
-      - 
-      - 
-      - Wolf wolf
+      - Hmm? What does it say here?
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 13
       debugIndex: 13
+      strings:
+      - CharacterOff
+      - Loup
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 14
       strings:
       - 
       - 
@@ -628,12 +1104,413 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "Don\u2019t pet the wolf"
+      - KEEP OFF (or else)
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 14
-      debugIndex: 14
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - 
+      - Loup
+      - neutral
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Now that\u2019s a rude sign\u2026"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 19
+      strings:
+      - '*ScenarioC'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 20
+      strings:
+      - 
+      - Kia
+      - 
+      - Right
+      - 
+      - 
+      - 
+      - 
+      - There you are, Loup! I was looking everywhere for you.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
+      strings:
+      - 
+      - Loup
+      - 
+      - Left
+      - 
+      - 
+      - 
+      - 
+      - "Oh hey, I just needed some time for myself\u2026"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 22
+      strings:
+      - 
+      - Kia
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "I see\u2026 I was hoping that you could come with me."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - -500
+      - -300
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 23
+      strings:
+      - 
+      - Kia
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - ...But if you are busy, I can go by myself!
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - -500
+      - -390
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 24
+      debugIndex: 24
+      strings:
+      - 
+      - Kia
+      - <Off>
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - -500
+      - -480
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 25
+      strings:
+      - 
+      - Loup
+      - <Off>
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Oof, that\u2019s not what I meant\u2026 I should probably <color=orange>apologize</color>."
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - -500
+      - -570
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 26
+      debugIndex: 26
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 27
+      debugIndex: 27
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 28
+      debugIndex: 28
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 29
+      debugIndex: 29
+      strings:
+      - '*KiaTalk'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 30
+      debugIndex: 30
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - <i>Kia seems deep in thought, and does not seem to notice me at first. Maybe
+        I should speak up.</i>
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 31
+      debugIndex: 31
+      strings:
+      - 
+      - Kia
+      - 
+      - Right
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 32
+      debugIndex: 32
+      strings:
+      - 
+      - Loup
+      - 
+      - Left
+      - 
+      - 
+      - 
+      - 
+      - "Hey, Kia\u2026"
+      - Input
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 33
+      debugIndex: 33
+      strings:
+      - Selection
+      - '*Apology'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Sorry, I didn\u2019t mean to come off as rude"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 34
+      debugIndex: 34
+      strings:
+      - Selection
+      - '*Destination'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Go with you? Where?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 35
+      debugIndex: 35
+      strings:
+      - Selection
+      - '*Nothing'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "<i>Huh, what\u2019s that smell?</i> <color=green><ruby=18>Perception</ruby></color>"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 36
+      debugIndex: 36
+      strings:
+      - Selection
+      - '*WOW'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - WOW
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 37
+      debugIndex: 37
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 38
+      debugIndex: 38
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 39
+      debugIndex: 39
+      strings:
+      - '*Apology'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 40
+      debugIndex: 40
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 41
+      debugIndex: 41
+      strings:
+      - '*Destination'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 42
+      debugIndex: 42
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 43
+      debugIndex: 43
+      strings:
+      - '*Nothing'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 44
+      debugIndex: 44
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 45
+      debugIndex: 45
+      strings:
+      - '*Shop'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 46
+      debugIndex: 46
+      strings:
+      - 
+      - Morshu
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Lamp oil, rope, bombs? You want it? It\u2019s yours my friend. As long as
+        you have enough rubies."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 47
+      debugIndex: 47
+      strings:
+      - 
+      - Morshu
+      - Morshu Sell
+      - 
+      - 
+      - 
+      - 
+      - 
+      - BRUH
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 48
+      debugIndex: 48
       strings:
       - EndScenario
       isEmpty: 0
@@ -641,6 +1518,6 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Loup/Loup.xls:Start
     type: 1
-    textLength: 179
+    textLength: 1137
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
