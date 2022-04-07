@@ -31,7 +31,7 @@ MonoBehaviour:
     interrupt: 0
   targetType: 0
   numberOfTargets: 1
-  validTargets: 0
+  validTargets: 3
   isTargetable: 1
   validTargetGroups: 0
   validTargetStates: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
     environmentVariableSetType: 0
     affliction: {fileID: 11400000, guid: dea86d6f7d23c403e8f158af05433ed4, type: 2}
     isChildEffect: 0
-    duration: 1
+    duration: 0.5
     normalizedProcessTime: 1
     chance: 1
     power1: 20
@@ -61,7 +61,7 @@ MonoBehaviour:
     targetType: 0
   animation:
     enabled: 0
-    parameterName: 
+    parameterName: Damage
     parameterType: 9
     valueBool: 1
     valueFloat: 1
@@ -69,13 +69,14 @@ MonoBehaviour:
     delayTime: 0
     delayAnimationLayer: 0
   instantiation:
-    enabled: 0
-    effect: {fileID: 0}
+    enabled: 1
+    effect: {fileID: 5548176778507802563, guid: b8c23637f7e35fd44a15da227f8073b8,
+      type: 3}
     targetMode: 1
-    targetActor: 0
-    targetName: 
+    targetActor: 1
+    targetName: Body
     targetTransform: {fileID: 0}
-    parentToTarget: 0
+    parentToTarget: 1
     inheritParentScale: 0
     offset: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
@@ -89,3 +90,4 @@ MonoBehaviour:
     delay: 0
   category: 1
   priority: 0
+  abilityCost: 02000000

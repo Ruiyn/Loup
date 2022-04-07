@@ -25,6 +25,12 @@ public class FogOfWar : MonoBehaviour
         hideFog();
     }
 
+    public void OnTriggerEnter3D(Collider collision)
+    {
+        Debug.Log("A");
+        hideFog();
+    }
+
     public void hideFog()
     {
         StartCoroutine("fadeFog");
@@ -33,7 +39,7 @@ public class FogOfWar : MonoBehaviour
     IEnumerator fadeFog()
     {
         this.fogOfWar.SetBool("isVisible", true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
         Destroy(gameObject);
     }
 }

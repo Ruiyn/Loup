@@ -89,3 +89,4 @@ MonoBehaviour:
     delay: 0
   category: 1
   priority: 0
+  abilityCost: 04000000

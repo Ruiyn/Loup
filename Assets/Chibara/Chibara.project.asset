@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f183272568e6f94382e3b59c0de76cd, type: 3}
+  m_Name: Chibara.project
+  m_EditorClassIdentifier: 
+  excelList: []
+  chapterDataList:
+  - chapterName: Boot
+    excelList:
+    - {fileID: 102900000, guid: d9eb01d6d81620b438715ff0d9901d65, type: 3}
+    excelDir: {fileID: 0}
+  checkWaitType: 0
+  checkWhiteSpaceEndOfCell: 1
+  checkTextCount: 1
+  checkTextCountAllLanguage: 0
+  scenarios: {fileID: 11400000, guid: b4455ceb35bbdd14c97c5017d2d89412, type: 2}
+  autoImportType: 1
+  convertPath: 
+  convertVersion: 0
+  isAutoUpdateVersionAfterConvert: 0
+  isAutoConvertOnImport: 0
+  customInportSpriteFolders:
+  - {fileID: 102900000, guid: 46123b82c3932f5468c71e6c5b4a8b8c, type: 3}
+  - {fileID: 102900000, guid: b4b4e06e29b2af545bccb74fc82bd715, type: 3}
+  - {fileID: 102900000, guid: ae805a9cb98ce99479883a5418cda76a, type: 3}
+  - {fileID: 102900000, guid: 79b1d34ea219b63489ba98df8bf89454, type: 3}
+  - {fileID: 102900000, guid: 1c9d2e0751750ca438a7d9844cb5d280, type: 3}
+  customInportAudioFolders:
+  - {fileID: 102900000, guid: bbcc0f4a38c399b43943f6b07f7609e1, type: 3}
+  - {fileID: 102900000, guid: f22f6964ea1c51c449300a902b471d59, type: 3}
+  - {fileID: 102900000, guid: fd8f133a387f0eb4b85c436d8cf97541, type: 3}
+  - {fileID: 102900000, guid: cbcfeb58b8d1d7c44b6859903989fee9, type: 3}
+  customInportMovieFolders: []
+  quickImport: 0
+  parseFormula: 0
+  parseNumreic: 0
+  enableCommentOutOnImport: 1
+  recourceDir: {fileID: 0}
+  checkExt: 0

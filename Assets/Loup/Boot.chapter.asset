@@ -406,9 +406,18 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - strength
+      - Int
+      - 0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Loup/Loup.xls:Param
     type: 1
-    textLength: 22
+    textLength: 34
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 9572138ac236ef249913630d8ded35bd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Icon: {instanceID: 0}
+  - Prefab: {instanceID: 0}
+  - EquippedSound: {instanceID: 0}
+  - UsedSound: {instanceID: 0}
+  - MovedSound: {instanceID: 0}
+  - DroppedSound: {instanceID: 0}
+  - statManager: {fileID: 5204259293497045247, guid: e1a5f37be83702f429ee157f7b8c1a20,
+      type: 3}
+  - stats: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
