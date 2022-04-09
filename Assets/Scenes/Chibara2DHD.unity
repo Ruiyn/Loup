@@ -272,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worldCamera: {fileID: 126857355}
   _player: {fileID: 0}
-  battle: {fileID: 2558975631526108084, guid: 85ef182aae53b7247ae4b352873132ef, type: 3}
+  battle: {fileID: 2558975631526108084, guid: 1f542ab29d49c884888f3c87d0343dcf, type: 3}
 --- !u!4 &124791930
 Transform:
   m_ObjectHideFlags: 0
