@@ -29,12 +29,12 @@ namespace Ares
         }
         public void TextUpdater()
         {
-            int counter = 0;
+            /*int counter = 0;
             foreach (Text text in diceText)
             {
-                text.text = thisActor.spiritDice[counter].ToString();
+                text.text = thisActor.SpiritDice[counter].ToString();
                 counter++;
-            }
+            }*/
         }
 
     }
