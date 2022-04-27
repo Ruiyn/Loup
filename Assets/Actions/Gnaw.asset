@@ -90,3 +90,4 @@ MonoBehaviour:
   category: 1
   priority: 0
   abilityCost: 04000000
+  costType: 0
