@@ -49,13 +49,6 @@ MonoBehaviour:
       - Chiara
       - 
       - neutral
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - Chiara/Chiara.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -65,19 +58,12 @@ MonoBehaviour:
       - Hood
       - 
       - neutral
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - NPC/Cultist.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/Chibara/Chibara.xls:Character
     type: 1
-    textLength: 210
+    textLength: 178
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
