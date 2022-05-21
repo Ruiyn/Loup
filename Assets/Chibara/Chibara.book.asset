@@ -124,6 +124,29 @@ MonoBehaviour:
     - rowIndex: 9
       debugIndex: 15
       strings:
+      - If
+      - isMoved
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 16
+      strings:
+      - Jump
+      - '*CheckVent'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 17
+      strings:
+      - Else
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 18
+      strings:
       - 
       - Chiara
       - 
@@ -136,8 +159,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 10
-      debugIndex: 16
+    - rowIndex: 13
+      debugIndex: 19
       strings:
       - 
       - Chiara
@@ -148,11 +171,682 @@ MonoBehaviour:
       - 
       - 
       - But at least it seems I can push it. Should I push the cabinet?
+      - Input
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 11
-      debugIndex: 17
+    - rowIndex: 14
+      debugIndex: 20
+      strings:
+      - Selection
+      - '*YesMoveCabinet'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Push the cabinet
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 21
+      strings:
+      - Selection
+      - '*NoMoveCabinet'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Leave it alone
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 22
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 23
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 26
+      strings:
+      - '*NoMoveCabinet'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 27
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I better not, then.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 28
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 30
+      strings:
+      - '*YesMoveCabinet'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 31
+      strings:
+      - SendMessageByName
+      - ActionManagerA
+      - Move
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 32
+      strings:
+      - Param
+      - isMoved=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 24
+      debugIndex: 33
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 35
+      strings:
+      - '*Wheelchair'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 26
+      debugIndex: 36
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "There\u2019s a stack of papers here\u2026"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 27
+      debugIndex: 37
+      strings:
+      - 
+      - Note
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 'Medical Chart. Patient: *****'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 28
+      debugIndex: 38
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I found a key right under the documents!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 29
+      debugIndex: 39
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "You obtained \u201CMaintenance Key\u201D"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 30
+      debugIndex: 40
+      strings:
+      - Param
+      - hasMaintKey=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 31
+      debugIndex: 41
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 32
+      debugIndex: 43
+      strings:
+      - '*Wardrobe'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 33
+      debugIndex: 44
+      strings:
+      - If
+      - hasMaintKey
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 34
+      debugIndex: 45
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "It\u2019s locked."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 35
+      debugIndex: 46
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - But I think I may have the key that unlocks it.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 36
+      debugIndex: 47
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - You unlock the cabinet.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 37
+      debugIndex: 48
+      strings:
+      - SendMessageByName
+      - HospitalWardrobe
+      - OpenAnimation
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 38
+      debugIndex: 49
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - ...The smell inside is unbearable.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 39
+      debugIndex: 50
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "There\u2019s all kinds of unsanitized medical equipment and garment inside."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 40
+      debugIndex: 51
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "But I think I can spot something useful. I just need to hold my breath and
+        reach for it\u2026"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 41
+      debugIndex: 52
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "You obtained a \u201CPair of Pliers\u201D"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 42
+      debugIndex: 53
+      strings:
+      - SendMessageByName
+      - HospitalWardrobe
+      - CloseAnimation
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 43
+      debugIndex: 54
+      strings:
+      - Param
+      - hasPliers=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 44
+      debugIndex: 55
+      strings:
+      - Else
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 45
+      debugIndex: 56
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "It\u2019s locked."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 46
+      debugIndex: 57
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 47
+      debugIndex: 58
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 48
+      debugIndex: 60
+      strings:
+      - '*CheckVent'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 49
+      debugIndex: 61
+      strings:
+      - If
+      - isOff
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 50
+      debugIndex: 62
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I may be able to reach that vent if I stand on this cabinet.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 51
+      debugIndex: 63
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Then I can probably force myself through and get out of here.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 52
+      debugIndex: 64
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "It\u2019s probably going to suck, and I don\u2019t know where it will take
+        me."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 53
+      debugIndex: 65
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - But what other option do I have?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 54
+      debugIndex: 66
+      strings:
+      - Else
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 55
+      debugIndex: 67
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I may be able to reach that vent if I stand on this cabinet.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 56
+      debugIndex: 68
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "But what good will it do if it\u2019s still spinning?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 57
+      debugIndex: 69
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 58
+      debugIndex: 70
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 59
+      debugIndex: 72
+      strings:
+      - '*Panel'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 60
+      debugIndex: 73
+      strings:
+      - If
+      - hasPliers
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 61
+      debugIndex: 74
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This panel should control the ventilation system. Or at least it looks connected
+        to it.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 62
+      debugIndex: 75
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Someone must\u2019ve wired it shut. But the pliers I found should help me
+        open it."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 63
+      debugIndex: 76
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Should I use the pliers to open the panel and turn the ventilation system
+        off?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 64
+      debugIndex: 77
+      strings:
+      - Selection
+      - '*TurnOffVent'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Yes
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 65
+      debugIndex: 78
+      strings:
+      - Selection
+      - '*Nothing'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - No
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 66
+      debugIndex: 79
+      strings:
+      - Else
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 67
+      debugIndex: 80
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This panel should control the ventilation system. Or at least it looks connected
+        to it.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 68
+      debugIndex: 81
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "It\u2019s wired shut. There\u2019s no way I\u2019m opening it with my bare
+        hands."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 69
+      debugIndex: 82
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 70
+      debugIndex: 83
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 71
+      debugIndex: 85
+      strings:
+      - '*TurnOffVent'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 72
+      debugIndex: 86
+      strings:
+      - SendMessageByName
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 73
+      debugIndex: 87
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 74
+      debugIndex: 91
+      strings:
+      - '*Nothing'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 75
+      debugIndex: 92
       strings:
       - EndScenario
       isEmpty: 0
@@ -160,7 +854,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Chibara/Chibara.xls:Start
     type: 1
-    textLength: 352
+    textLength: 2256
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -500,9 +1194,45 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - hasMaintKey
+      - bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - hasPliers
+      - bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - isMoved
+      - bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - isOff
+      - bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Chibara/Chibara.xls:Param
     type: 1
-    textLength: 22
+    textLength: 90
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -730,6 +1460,29 @@ MonoBehaviour:
     - rowIndex: 15
       debugIndex: 15
       strings:
+      - If
+      - isMoved
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - Jump
+      - '*CheckVent'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings:
+      - Else
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings:
       - 
       - Chiara
       - 
@@ -742,8 +1495,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
+    - rowIndex: 19
+      debugIndex: 19
       strings:
       - 
       - Chiara
@@ -754,18 +1507,815 @@ MonoBehaviour:
       - 
       - 
       - But at least it seems I can push it. Should I push the cabinet?
+      - Input
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 17
-      debugIndex: 17
+    - rowIndex: 20
+      debugIndex: 20
+      strings:
+      - Selection
+      - '*YesMoveCabinet'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Push the cabinet
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
+      strings:
+      - Selection
+      - '*NoMoveCabinet'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Leave it alone
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 22
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 23
       strings:
       - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 24
+      debugIndex: 24
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 25
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 26
+      debugIndex: 26
+      strings:
+      - '*NoMoveCabinet'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 27
+      debugIndex: 27
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I better not, then.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 28
+      debugIndex: 28
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 29
+      debugIndex: 29
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 30
+      debugIndex: 30
+      strings:
+      - '*YesMoveCabinet'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 31
+      debugIndex: 31
+      strings:
+      - SendMessageByName
+      - ActionManagerA
+      - Move
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 32
+      debugIndex: 32
+      strings:
+      - Param
+      - isMoved=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 33
+      debugIndex: 33
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 34
+      debugIndex: 34
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 35
+      debugIndex: 35
+      strings:
+      - '*Wheelchair'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 36
+      debugIndex: 36
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "There\u2019s a stack of papers here\u2026"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 37
+      debugIndex: 37
+      strings:
+      - 
+      - Note
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 'Medical Chart. Patient: *****'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 38
+      debugIndex: 38
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I found a key right under the documents!
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 39
+      debugIndex: 39
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "You obtained \u201CMaintenance Key\u201D"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 40
+      debugIndex: 40
+      strings:
+      - Param
+      - hasMaintKey=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 41
+      debugIndex: 41
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 42
+      debugIndex: 42
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 43
+      debugIndex: 43
+      strings:
+      - '*Wardrobe'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 44
+      debugIndex: 44
+      strings:
+      - If
+      - hasMaintKey
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 45
+      debugIndex: 45
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "It\u2019s locked."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 46
+      debugIndex: 46
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - But I think I may have the key that unlocks it.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 47
+      debugIndex: 47
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - You unlock the cabinet.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 48
+      debugIndex: 48
+      strings:
+      - SendMessageByName
+      - HospitalWardrobe
+      - OpenAnimation
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 49
+      debugIndex: 49
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - ...The smell inside is unbearable.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 50
+      debugIndex: 50
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "There\u2019s all kinds of unsanitized medical equipment and garment inside."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 51
+      debugIndex: 51
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "But I think I can spot something useful. I just need to hold my breath and
+        reach for it\u2026"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 52
+      debugIndex: 52
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "You obtained a \u201CPair of Pliers\u201D"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 53
+      debugIndex: 53
+      strings:
+      - SendMessageByName
+      - HospitalWardrobe
+      - CloseAnimation
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 54
+      debugIndex: 54
+      strings:
+      - Param
+      - hasPliers=true
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 55
+      debugIndex: 55
+      strings:
+      - Else
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 56
+      debugIndex: 56
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "It\u2019s locked."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 57
+      debugIndex: 57
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 58
+      debugIndex: 58
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 59
+      debugIndex: 59
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 60
+      debugIndex: 60
+      strings:
+      - '*CheckVent'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 61
+      debugIndex: 61
+      strings:
+      - If
+      - isOff
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 62
+      debugIndex: 62
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I may be able to reach that vent if I stand on this cabinet.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 63
+      debugIndex: 63
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Then I can probably force myself through and get out of here.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 64
+      debugIndex: 64
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "It\u2019s probably going to suck, and I don\u2019t know where it will take
+        me."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 65
+      debugIndex: 65
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - But what other option do I have?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 66
+      debugIndex: 66
+      strings:
+      - Else
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 67
+      debugIndex: 67
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - I may be able to reach that vent if I stand on this cabinet.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 68
+      debugIndex: 68
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "But what good will it do if it\u2019s still spinning?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 69
+      debugIndex: 69
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 70
+      debugIndex: 70
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 71
+      debugIndex: 71
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 72
+      debugIndex: 72
+      strings:
+      - '*Panel'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 73
+      debugIndex: 73
+      strings:
+      - If
+      - hasPliers
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 74
+      debugIndex: 74
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This panel should control the ventilation system. Or at least it looks connected
+        to it.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 75
+      debugIndex: 75
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "Someone must\u2019ve wired it shut. But the pliers I found should help me
+        open it."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 76
+      debugIndex: 76
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Should I use the pliers to open the panel and turn the ventilation system
+        off?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 77
+      debugIndex: 77
+      strings:
+      - Selection
+      - '*TurnOffVent'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Yes
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 78
+      debugIndex: 78
+      strings:
+      - Selection
+      - '*Nothing'
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - No
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 79
+      debugIndex: 79
+      strings:
+      - Else
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 80
+      debugIndex: 80
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - This panel should control the ventilation system. Or at least it looks connected
+        to it.
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 81
+      debugIndex: 81
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "It\u2019s wired shut. There\u2019s no way I\u2019m opening it with my bare
+        hands."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 82
+      debugIndex: 82
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 83
+      debugIndex: 83
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 84
+      debugIndex: 84
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 85
+      debugIndex: 85
+      strings:
+      - '*TurnOffVent'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 86
+      debugIndex: 86
+      strings:
+      - SendMessageByName
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 87
+      debugIndex: 87
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 88
+      debugIndex: 88
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 89
+      debugIndex: 89
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 90
+      debugIndex: 90
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 91
+      debugIndex: 91
+      strings:
+      - '*Nothing'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 92
+      debugIndex: 92
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 93
+      debugIndex: 93
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 94
+      debugIndex: 94
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 95
+      debugIndex: 95
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 96
+      debugIndex: 96
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 97
+      debugIndex: 97
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 98
+      debugIndex: 98
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 99
+      debugIndex: 99
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 100
+      debugIndex: 100
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 101
+      debugIndex: 101
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 102
+      debugIndex: 102
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Chibara/Chibara.xls:Start
     type: 1
-    textLength: 352
+    textLength: 2256
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}

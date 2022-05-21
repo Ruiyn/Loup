@@ -10,6 +10,8 @@ public class AdvEngineController : MonoBehaviour
     [SerializeField]
     protected AdvEngine advEngine;
 
+    public bool read = false;
+
     public bool IsPlaying { get; private set; }
 
     float defaultSpeed = -1;
@@ -33,7 +35,7 @@ public class AdvEngineController : MonoBehaviour
             IsPlaying = false;
             yield return null;
         }
-        if (onComplete != null) onComplete();
+        if (onComplete != null) onComplete(); read = true;
     }
 
     public void JumpScenario(string label, Action onComplete, Action onFailed)
@@ -77,9 +79,13 @@ public class AdvEngineController : MonoBehaviour
 
     public void ResetMessageSpeed()
     {
+
+
         if (defaultSpeed >= 0)
         {
             AdvEngine.Config.MessageSpeed = defaultSpeed;
         }
     }
+
+
 }
