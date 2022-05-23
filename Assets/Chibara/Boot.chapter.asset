@@ -354,7 +354,7 @@ MonoBehaviour:
       debugIndex: 1
       strings:
       - hasMaintKey
-      - bool
+      - Bool
       - FALSE
       isEmpty: 0
       isCommentOut: 0
@@ -363,7 +363,7 @@ MonoBehaviour:
       debugIndex: 2
       strings:
       - hasPliers
-      - bool
+      - Bool
       - FALSE
       isEmpty: 0
       isCommentOut: 0
@@ -372,7 +372,7 @@ MonoBehaviour:
       debugIndex: 3
       strings:
       - isMoved
-      - bool
+      - Bool
       - FALSE
       isEmpty: 0
       isCommentOut: 0
@@ -381,9 +381,27 @@ MonoBehaviour:
       debugIndex: 4
       strings:
       - isOff
-      - bool
+      - Bool
       - FALSE
       isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     name: Assets/Chibara/Chibara.xls:Param

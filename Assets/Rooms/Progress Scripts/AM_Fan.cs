@@ -5,12 +5,12 @@ using UnityEngine.Playables;
 
 public class AM_Fan : MonoBehaviour
 {
-    public PlayableDirector cutsceneDirector;
+    public GameObject cutsceneDirector;
 
 
     private void PlayCutscene()
     {
-        cutsceneDirector.Play();
+        cutsceneDirector.SetActive(true);
     }
 
     // Start is called before the first frame update

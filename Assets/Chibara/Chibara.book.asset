@@ -623,22 +623,15 @@ MonoBehaviour:
     - rowIndex: 54
       debugIndex: 66
       strings:
-      - Else
+      - Jump
+      - '*ClimbVent'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 55
       debugIndex: 67
       strings:
-      - 
-      - Chiara
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - I may be able to reach that vent if I stand on this cabinet.
+      - Else
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -653,41 +646,12 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "But what good will it do if it\u2019s still spinning?"
+      - I may be able to reach that vent if I stand on this cabinet.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 57
       debugIndex: 69
-      strings:
-      - EndIf
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 58
-      debugIndex: 70
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 59
-      debugIndex: 72
-      strings:
-      - '*Panel'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 60
-      debugIndex: 73
-      strings:
-      - If
-      - hasPliers
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 61
-      debugIndex: 74
       strings:
       - 
       - Chiara
@@ -697,8 +661,36 @@ MonoBehaviour:
       - 
       - 
       - 
-      - This panel should control the ventilation system. Or at least it looks connected
-        to it.
+      - "But what good will it do if it\u2019s still spinning?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 58
+      debugIndex: 70
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 59
+      debugIndex: 71
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 60
+      debugIndex: 73
+      strings:
+      - '*Panel'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 61
+      debugIndex: 74
+      strings:
+      - If
+      - hasPliers
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -713,8 +705,8 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "Someone must\u2019ve wired it shut. But the pliers I found should help me
-        open it."
+      - This panel should control the ventilation system. Or at least it looks connected
+        to it.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -729,13 +721,29 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Should I use the pliers to open the panel and turn the ventilation system
-        off?
+      - "Someone must\u2019ve wired it shut. But the pliers I found should help me
+        open it."
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 64
       debugIndex: 77
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Should I use the pliers to open the panel and turn the ventilation system
+        off?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 65
+      debugIndex: 78
       strings:
       - Selection
       - '*TurnOffVent'
@@ -749,8 +757,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 65
-      debugIndex: 78
+    - rowIndex: 66
+      debugIndex: 79
       strings:
       - Selection
       - '*Nothing'
@@ -764,26 +772,10 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 66
-      debugIndex: 79
-      strings:
-      - Else
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 67
       debugIndex: 80
       strings:
-      - 
-      - Chiara
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - This panel should control the ventilation system. Or at least it looks connected
-        to it.
+      - Else
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -798,55 +790,104 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "It\u2019s wired shut. There\u2019s no way I\u2019m opening it with my bare
-        hands."
+      - This panel should control the ventilation system. Or at least it looks connected
+        to it.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 69
       debugIndex: 82
       strings:
-      - EndIf
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "It\u2019s wired shut. There\u2019s no way I\u2019m opening it with my bare
+        hands."
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 70
       debugIndex: 83
       strings:
-      - EndScenario
+      - EndIf
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 71
-      debugIndex: 85
+      debugIndex: 84
       strings:
-      - '*TurnOffVent'
+      - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 72
       debugIndex: 86
       strings:
-      - SendMessageByName
+      - '*TurnOffVent'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 73
       debugIndex: 87
       strings:
-      - EndScenario
+      - Param
+      - isOff=true
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 74
-      debugIndex: 91
+      debugIndex: 88
+      strings:
+      - SendMessageByName
+      - VentWall
+      - PlayCutscene
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 75
+      debugIndex: 89
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 76
+      debugIndex: 92
       strings:
       - '*Nothing'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 75
-      debugIndex: 92
+    - rowIndex: 77
+      debugIndex: 93
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 78
+      debugIndex: 95
+      strings:
+      - '*ClimbVent'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 79
+      debugIndex: 96
+      strings:
+      - SendMessageByName
+      - FanExit
+      - TriggerButtonAction
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 80
+      debugIndex: 97
       strings:
       - EndScenario
       isEmpty: 0
@@ -854,7 +895,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Chibara/Chibara.xls:Start
     type: 1
-    textLength: 2256
+    textLength: 2369
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -1198,7 +1239,7 @@ MonoBehaviour:
       debugIndex: 1
       strings:
       - hasMaintKey
-      - bool
+      - Bool
       - FALSE
       isEmpty: 0
       isCommentOut: 0
@@ -1207,7 +1248,7 @@ MonoBehaviour:
       debugIndex: 2
       strings:
       - hasPliers
-      - bool
+      - Bool
       - FALSE
       isEmpty: 0
       isCommentOut: 0
@@ -1216,7 +1257,7 @@ MonoBehaviour:
       debugIndex: 3
       strings:
       - isMoved
-      - bool
+      - Bool
       - FALSE
       isEmpty: 0
       isCommentOut: 0
@@ -1225,9 +1266,27 @@ MonoBehaviour:
       debugIndex: 4
       strings:
       - isOff
-      - bool
+      - Bool
       - FALSE
       isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     name: Assets/Chibara/Chibara.xls:Param
@@ -1995,22 +2054,15 @@ MonoBehaviour:
     - rowIndex: 66
       debugIndex: 66
       strings:
-      - Else
+      - Jump
+      - '*ClimbVent'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 67
       debugIndex: 67
       strings:
-      - 
-      - Chiara
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - I may be able to reach that vent if I stand on this cabinet.
+      - Else
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -2025,47 +2077,12 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "But what good will it do if it\u2019s still spinning?"
+      - I may be able to reach that vent if I stand on this cabinet.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 69
       debugIndex: 69
-      strings:
-      - EndIf
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 70
-      debugIndex: 70
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 71
-      debugIndex: 71
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 72
-      debugIndex: 72
-      strings:
-      - '*Panel'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 73
-      debugIndex: 73
-      strings:
-      - If
-      - hasPliers
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 74
-      debugIndex: 74
       strings:
       - 
       - Chiara
@@ -2075,8 +2092,42 @@ MonoBehaviour:
       - 
       - 
       - 
-      - This panel should control the ventilation system. Or at least it looks connected
-        to it.
+      - "But what good will it do if it\u2019s still spinning?"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 70
+      debugIndex: 70
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 71
+      debugIndex: 71
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 72
+      debugIndex: 72
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 73
+      debugIndex: 73
+      strings:
+      - '*Panel'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 74
+      debugIndex: 74
+      strings:
+      - If
+      - hasPliers
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -2091,8 +2142,8 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "Someone must\u2019ve wired it shut. But the pliers I found should help me
-        open it."
+      - This panel should control the ventilation system. Or at least it looks connected
+        to it.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -2107,13 +2158,29 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Should I use the pliers to open the panel and turn the ventilation system
-        off?
+      - "Someone must\u2019ve wired it shut. But the pliers I found should help me
+        open it."
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 77
       debugIndex: 77
+      strings:
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - Should I use the pliers to open the panel and turn the ventilation system
+        off?
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 78
+      debugIndex: 78
       strings:
       - Selection
       - '*TurnOffVent'
@@ -2127,8 +2194,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 78
-      debugIndex: 78
+    - rowIndex: 79
+      debugIndex: 79
       strings:
       - Selection
       - '*Nothing'
@@ -2142,26 +2209,10 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 79
-      debugIndex: 79
-      strings:
-      - Else
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 80
       debugIndex: 80
       strings:
-      - 
-      - Chiara
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - This panel should control the ventilation system. Or at least it looks connected
-        to it.
+      - Else
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -2176,62 +2227,76 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "It\u2019s wired shut. There\u2019s no way I\u2019m opening it with my bare
-        hands."
+      - This panel should control the ventilation system. Or at least it looks connected
+        to it.
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 82
       debugIndex: 82
       strings:
-      - EndIf
+      - 
+      - Chiara
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "It\u2019s wired shut. There\u2019s no way I\u2019m opening it with my bare
+        hands."
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 83
       debugIndex: 83
       strings:
-      - EndScenario
+      - EndIf
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 84
       debugIndex: 84
-      strings: []
-      isEmpty: 1
+      strings:
+      - EndScenario
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 85
       debugIndex: 85
-      strings:
-      - '*TurnOffVent'
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 86
       debugIndex: 86
       strings:
-      - SendMessageByName
+      - '*TurnOffVent'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 87
       debugIndex: 87
       strings:
-      - EndScenario
+      - Param
+      - isOff=true
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 88
       debugIndex: 88
-      strings: []
-      isEmpty: 1
+      strings:
+      - SendMessageByName
+      - VentWall
+      - PlayCutscene
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 89
       debugIndex: 89
-      strings: []
-      isEmpty: 1
+      strings:
+      - EndScenario
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 90
@@ -2242,22 +2307,22 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 91
       debugIndex: 91
-      strings:
-      - '*Nothing'
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 92
       debugIndex: 92
       strings:
-      - EndScenario
+      - '*Nothing'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 93
       debugIndex: 93
-      strings: []
-      isEmpty: 1
+      strings:
+      - EndScenario
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 94
@@ -2268,20 +2333,25 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 95
       debugIndex: 95
-      strings: []
-      isEmpty: 1
+      strings:
+      - '*ClimbVent'
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 96
       debugIndex: 96
-      strings: []
-      isEmpty: 1
+      strings:
+      - SendMessageByName
+      - FanExit
+      - TriggerButtonAction
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 97
       debugIndex: 97
-      strings: []
-      isEmpty: 1
+      strings:
+      - EndScenario
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 98
@@ -2314,8 +2384,14 @@ MonoBehaviour:
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 103
+      debugIndex: 103
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Chibara/Chibara.xls:Start
     type: 1
-    textLength: 2256
+    textLength: 2369
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}

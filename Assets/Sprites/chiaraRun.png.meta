@@ -1,0 +1,768 @@
+fileFormatVersion: 2
+guid: 29ea79a44bf3c574e9dcd7a6e19fa0dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5756601318038607620
+    second: chiaraRun_0
+  - first:
+      213: 3999176315244698360
+    second: chiaraRun_1
+  - first:
+      213: 6082511865821779221
+    second: chiaraRun_2
+  - first:
+      213: 4211469495541887801
+    second: chiaraRun_3
+  - first:
+      213: -9141282366749735305
+    second: chiaraRun_4
+  - first:
+      213: -2958283849694074433
+    second: chiaraRun_5
+  - first:
+      213: 2040741166063601839
+    second: chiaraRun_6
+  - first:
+      213: -901142659025106744
+    second: chiaraRun_7
+  - first:
+      213: 3864199662395296665
+    second: chiaraRun_8
+  - first:
+      213: 2200257559030768595
+    second: chiaraRun_9
+  - first:
+      213: -6851549875687690662
+    second: chiaraRun_10
+  - first:
+      213: -6080435541350438729
+    second: chiaraRun_11
+  - first:
+      213: 4972626882810238311
+    second: chiaraRun_12
+  - first:
+      213: -8229352073501629488
+    second: chiaraRun_13
+  - first:
+      213: -4239785551679115977
+    second: chiaraRun_14
+  - first:
+      213: 4929498698493939240
+    second: chiaraRun_15
+  - first:
+      213: -6383090077503094787
+    second: chiaraRun_16
+  - first:
+      213: 1664153476886882095
+    second: chiaraRun_17
+  - first:
+      213: 4366127855967545855
+    second: chiaraRun_18
+  - first:
+      213: -6784496774897669085
+    second: chiaraRun_19
+  - first:
+      213: 4401726372623634186
+    second: chiaraRun_20
+  - first:
+      213: 1105418154625446497
+    second: chiaraRun_21
+  - first:
+      213: -531098193159268952
+    second: chiaraRun_22
+  - first:
+      213: -2410061699320890603
+    second: chiaraRun_23
+  - first:
+      213: 5479804783079706625
+    second: chiaraRun_24
+  - first:
+      213: 627433294717612976
+    second: chiaraRun_25
+  - first:
+      213: 7993269834688562552
+    second: chiaraRun_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chiaraRun_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 367
+        width: 28
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4079c33266e83ef40800000000000000
+      internalID: 5756601318038607620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 367
+        width: 28
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fad0509badef7730800000000000000
+      internalID: 3999176315244698360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_2
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 367
+        width: 28
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515d760c05c696450800000000000000
+      internalID: 6082511865821779221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 300
+        width: 28
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933fa206135227a30800000000000000
+      internalID: 4211469495541887801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 300
+        width: 28
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776075abe14a32180800000000000000
+      internalID: -9141282366749735305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 302
+        width: 28
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9a53a238012f6d0800000000000000
+      internalID: -2958283849694074433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 302
+        width: 28
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8ccb9374b225c10800000000000000
+      internalID: 2040741166063601839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 302
+        width: 28
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c88bdca68f7e73f0800000000000000
+      internalID: -901142659025106744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 303
+        width: 28
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b814a9e1560a530800000000000000
+      internalID: 3864199662395296665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 302
+        width: 28
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3a56ca792e88e10800000000000000
+      internalID: 2200257559030768595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_10
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 300
+        width: 28
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e63ca60b76ae0a0800000000000000
+      internalID: -6851549875687690662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 231
+        width: 29
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8a5263714fd9ba0800000000000000
+      internalID: -6080435541350438729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 231
+        width: 34
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7655676cdc1520540800000000000000
+      internalID: 4972626882810238311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_13
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 231
+        width: 28
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3af4fd3e77bcd80800000000000000
+      internalID: -8229352073501629488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_14
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 231
+        width: 25
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d255c01814925c0800000000000000
+      internalID: -4239785551679115977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_15
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 234
+        width: 30
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e4b7cd2f8196440800000000000000
+      internalID: 4929498698493939240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_16
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 231
+        width: 25
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff7b11c465ba67a0800000000000000
+      internalID: -6383090077503094787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_17
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 139
+        width: 58
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27e29925c2481710800000000000000
+      internalID: 1664153476886882095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_18
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 137
+        width: 54
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff922eaf62a979c30800000000000000
+      internalID: 4366127855967545855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_19
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 137
+        width: 55
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ce0780120a8d1a0800000000000000
+      internalID: -6784496774897669085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_20
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 137
+        width: 54
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f43b680d2161d30800000000000000
+      internalID: 4401726372623634186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_21
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 137
+        width: 55
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162b7b274fb375f00800000000000000
+      internalID: 1105418154625446497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_22
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 137
+        width: 54
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5d3e7d10921a8f0800000000000000
+      internalID: -531098193159268952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_23
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 69
+        width: 51
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b343d47adbd8ed0800000000000000
+      internalID: -2410061699320890603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_24
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 69
+        width: 45
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100d3fdba6d2c0c40800000000000000
+      internalID: 5479804783079706625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_25
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 69
+        width: 34
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b375ebd14715b800800000000000000
+      internalID: 627433294717612976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chiaraRun_26
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 69
+        width: 28
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8750572809ccdee60800000000000000
+      internalID: 7993269834688562552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 640441e2efadf1d4eb37f4b9747860f2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
