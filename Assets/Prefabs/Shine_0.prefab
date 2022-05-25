@@ -25,14 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482343829074995706}
-  m_LocalRotation: {x: -0, y: 0.91983014, z: -0, w: 0.3923168}
+  m_LocalRotation: {x: 0, y: 0.91982836, z: 0, w: 0.39232114}
   m_LocalPosition: {x: -0.18274768, y: 0.84049666, z: 0.23429689}
   m_LocalScale: {x: 0.83542204, y: 0.8354219, z: 0.83542204}
   m_Children:
   - {fileID: 1482343829479159386}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 133.802, z: 0}
 --- !u!212 &1482343829074995704
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1603220759
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 2813274282232148420, guid: 9d17598cdba3451408d8e9e59dd79b16,
     type: 3}
@@ -148,8 +148,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5683851, y: 1.6279101, z: 1.794556}
-  m_Center: {x: 0.10406299, y: 0, z: -0.098819226}
+  m_Size: {x: 0.585401, y: 1.62791, z: 1.535586}
+  m_Center: {x: -0.06868313, y: 0, z: 0.030665832}
 --- !u!114 &1482343829479159387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
   InputButton: Interact
   InputKey: 32
   AnimationTriggerParameterName: 
-  UseVisualPrompt: 1
+  UseVisualPrompt: 0
   ButtonPromptPrefab: {fileID: 114767332097364426, guid: bb1fc0f1f16f31248b9b4d80aa795609,
     type: 3}
   ButtonPromptText: A
@@ -207,7 +207,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Wheelchair
+          m_StringArgument: MirrorScene
           m_BoolArgument: 0
         m_CallState: 2
   OnExit:

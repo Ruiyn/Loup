@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 90084c3c1635fdb40b598b19c35dba83
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5086217812650922995
+    second: Leni_0
+  - first:
+      213: -5392354774120175999
+    second: Leni_1
+  - first:
+      213: -7492267423456122963
+    second: Leni_2
+  - first:
+      213: -3659603930662967491
+    second: Leni_3
+  - first:
+      213: -8842773359970931772
+    second: Leni_4
+  - first:
+      213: 8926960777652871869
+    second: Leni_5
+  - first:
+      213: -1006290957948023780
+    second: Leni_6
+  - first:
+      213: 1768871278944811398
+    second: Leni_7
+  - first:
+      213: 8435543156050045224
+    second: Leni_8
+  - first:
+      213: -1383412538362168775
+    second: Leni_9
+  - first:
+      213: -4870735413242527582
+    second: Leni_10
+  - first:
+      213: -1141167963008210375
+    second: Leni_11
+  - first:
+      213: 6390353184315573994
+    second: Leni_12
+  - first:
+      213: -3722846809820114503
+    second: Leni_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Leni_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 264
+        width: 32
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c6daae8df1a69b0800000000000000
+      internalID: -5086217812650922995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 251
+        width: 34
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1866fa127e18a25b0800000000000000
+      internalID: -5392354774120175999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 180
+        width: 34
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7aaae597e160890800000000000000
+      internalID: -7492267423456122963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 180
+        width: 34
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37e53e4d99763dc0800000000000000
+      internalID: -3659603930662967491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 180
+        width: 39
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb25a9ea78284580800000000000000
+      internalID: -8842773359970931772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 180
+        width: 40
+        height: 65
+      alignment: 9
+      pivot: {x: 0.42056847, y: 0.00063500035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db228dbb78fe2eb70800000000000000
+      internalID: 8926960777652871869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_6
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 180
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: 0.39272562, y: -0.00000023841858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c02de84bfe802f0800000000000000
+      internalID: -1006290957948023780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_7
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 91
+        width: 40
+        height: 65
+      alignment: 9
+      pivot: {x: 0.4148871, y: -0.00093536376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68975ea6e0b4c8810800000000000000
+      internalID: 1768871278944811398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_8
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 91
+        width: 39
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82927d79ec1111570800000000000000
+      internalID: 8435543156050045224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 91
+        width: 46
+        height: 67
+      alignment: 9
+      pivot: {x: 0.6227268, y: -0.0015250818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93af91140a12dcce0800000000000000
+      internalID: -1383412538362168775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_10
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 91
+        width: 45
+        height: 67
+      alignment: 9
+      pivot: {x: 0.61111176, y: 0.00000011387156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a083caa2fba76cb0800000000000000
+      internalID: -4870735413242527582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_11
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 17
+        width: 34
+        height: 63
+      alignment: 9
+      pivot: {x: 0.48512745, y: -0.0011466496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ae6d7a8c1c920f0800000000000000
+      internalID: -1141167963008210375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 17
+        width: 33
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae68a641d581fa850800000000000000
+      internalID: 6390353184315573994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leni_13
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 16
+        width: 34
+        height: 61
+      alignment: 9
+      pivot: {x: 0.4858825, y: 0.0016393192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1d97b0d8ac55cc0800000000000000
+      internalID: -3722846809820114503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8b54b911231120d43af6935cb941f6ba
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
