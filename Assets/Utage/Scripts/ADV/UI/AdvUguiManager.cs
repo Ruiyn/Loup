@@ -104,6 +104,11 @@ namespace Utage
 					}
 					if (IsShowingMessageWindow || Engine.SelectionManager.IsWaitInput)
 					{	//入力待ち
+						if (Input.GetKeyDown(KeyCode.Space))
+                        {
+							Engine.Page.InputSendMessage();
+						}
+
 						if (InputUtil.IsMouseRightButtonDown())
 						{	//右クリックでウィンドウ閉じる
 							Status = UiStatus.HideMessageWindow;

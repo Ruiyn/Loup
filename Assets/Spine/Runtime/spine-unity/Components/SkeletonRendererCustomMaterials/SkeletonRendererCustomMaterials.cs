@@ -39,12 +39,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Spine.Unity {
-#if NEW_PREFAB_SYSTEM
+	#if NEW_PREFAB_SYSTEM
 	[ExecuteAlways]
-#else
+	#else
 	[ExecuteInEditMode]
-#endif
-	[HelpURL("http://esotericsoftware.com/spine-unity#SkeletonRendererCustomMaterials")]
+	#endif
 	public class SkeletonRendererCustomMaterials : MonoBehaviour {
 
 		#region Inspector
@@ -52,7 +51,7 @@ namespace Spine.Unity {
 		[SerializeField] protected List<SlotMaterialOverride> customSlotMaterials = new List<SlotMaterialOverride>();
 		[SerializeField] protected List<AtlasMaterialOverride> customMaterialOverrides = new List<AtlasMaterialOverride>();
 
-#if UNITY_EDITOR
+		#if UNITY_EDITOR
 		void Reset () {
 			skeletonRenderer = GetComponent<SkeletonRenderer>();
 
@@ -75,7 +74,7 @@ namespace Spine.Unity {
 				customMaterialOverrides = initialAtlasMaterialOverrides;
 			}
 		}
-#endif
+		#endif
 		#endregion
 
 		void SetCustomSlotMaterials () {
@@ -90,8 +89,7 @@ namespace Spine.Unity {
 					continue;
 
 				Slot slotObject = skeletonRenderer.skeleton.FindSlot(slotMaterialOverride.slotName);
-				if (slotObject != null)
-					skeletonRenderer.CustomSlotMaterials[slotObject] = slotMaterialOverride.material;
+				skeletonRenderer.CustomSlotMaterials[slotObject] = slotMaterialOverride.material;
 			}
 		}
 
@@ -107,8 +105,7 @@ namespace Spine.Unity {
 					continue;
 
 				Slot slotObject = skeletonRenderer.skeleton.FindSlot(slotMaterialOverride.slotName);
-				if (slotObject == null)
-					continue;
+
 				Material currentMaterial;
 				if (!skeletonRenderer.CustomSlotMaterials.TryGetValue(slotObject, out currentMaterial))
 					continue;
@@ -127,7 +124,7 @@ namespace Spine.Unity {
 				return;
 			}
 
-#if SPINE_OPTIONAL_MATERIALOVERRIDE
+			#if SPINE_OPTIONAL_MATERIALOVERRIDE
 			for (int i = 0; i < customMaterialOverrides.Count; i++) {
 				AtlasMaterialOverride atlasMaterialOverride = customMaterialOverrides[i];
 				if (atlasMaterialOverride.overrideDisabled)
@@ -135,7 +132,7 @@ namespace Spine.Unity {
 
 				skeletonRenderer.CustomMaterialOverride[atlasMaterialOverride.originalMaterial] = atlasMaterialOverride.replacementMaterial;
 			}
-#endif
+			#endif
 		}
 
 		void RemoveCustomMaterialOverrides () {
@@ -144,7 +141,7 @@ namespace Spine.Unity {
 				return;
 			}
 
-#if SPINE_OPTIONAL_MATERIALOVERRIDE
+			#if SPINE_OPTIONAL_MATERIALOVERRIDE
 			for (int i = 0; i < customMaterialOverrides.Count; i++) {
 				AtlasMaterialOverride atlasMaterialOverride = customMaterialOverrides[i];
 				Material currentMaterial;
@@ -158,7 +155,7 @@ namespace Spine.Unity {
 
 				skeletonRenderer.CustomMaterialOverride.Remove(atlasMaterialOverride.originalMaterial);
 			}
-#endif
+			#endif
 		}
 
 		// OnEnable applies the overrides at runtime, and when the editor loads.

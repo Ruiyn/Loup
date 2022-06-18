@@ -27,10 +27,11 @@
  * THE SPINE RUNTIMES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *****************************************************************************/
 
-using Spine.Unity.AttachmentTools;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+using Spine.Unity.AttachmentTools;
 
 namespace Spine.Unity.Examples {
 	public class EquipSystemExample : MonoBehaviour, IHasSkeletonDataAsset {
@@ -53,7 +54,7 @@ namespace Spine.Unity.Examples {
 			public string slot;
 			[SpineSkin]
 			public string templateSkin;
-			[SpineAttachment(skinField: "templateSkin")]
+			[SpineAttachment(skinField:"templateSkin")]
 			public string templateAttachment;
 		}
 
@@ -67,7 +68,7 @@ namespace Spine.Unity.Examples {
 			EquipHook howToEquip = equippables.Find(x => x.type == equipType);
 
 			var skeletonData = skeletonDataAsset.GetSkeletonData(true);
-			int slotIndex = skeletonData.FindSlot(howToEquip.slot).Index;
+			int slotIndex = skeletonData.FindSlotIndex(howToEquip.slot);
 			var attachment = GenerateAttachmentFromEquipAsset(asset, slotIndex, howToEquip.templateSkin, howToEquip.templateAttachment);
 			target.Equip(slotIndex, howToEquip.templateAttachment, attachment);
 		}
@@ -81,8 +82,6 @@ namespace Spine.Unity.Examples {
 				var templateSkin = skeletonData.FindSkin(templateSkinName);
 				Attachment templateAttachment = templateSkin.GetAttachment(slotIndex, templateAttachmentName);
 				attachment = templateAttachment.GetRemappedClone(asset.sprite, sourceMaterial, premultiplyAlpha: this.applyPMA);
-				// Note: Each call to `GetRemappedClone()` with parameter `premultiplyAlpha` set to `true` creates
-				// a cached Texture copy which can be cleared by calling AtlasUtilities.ClearCache() as shown in the method below.
 
 				cachedAttachments.Add(asset, attachment); // Cache this value for next time this asset is used.
 			}
@@ -92,14 +91,6 @@ namespace Spine.Unity.Examples {
 
 		public void Done () {
 			target.OptimizeSkin();
-			// `GetRepackedSkin()` and each call to `GetRemappedClone()` with parameter `premultiplyAlpha` set to `true`
-			// creates cached Texture copies which can be cleared by calling AtlasUtilities.ClearCache().
-			// You can optionally clear the textures cache after multiple repack operations.
-			// Just be aware that while this cleanup frees up memory, it is also a costly operation
-			// and will likely cause a spike in the framerate.
-
-			//AtlasUtilities.ClearCache();
-			//Resources.UnloadUnusedAssets();
 		}
 
 	}

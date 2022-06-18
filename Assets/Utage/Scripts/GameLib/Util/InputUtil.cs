@@ -82,8 +82,9 @@ namespace Utage
 
 		public static bool IsInputScrollWheelDown()
 		{
-			if (!EnableInput) return false;
-			float axis = Input.GetAxis("Mouse ScrollWheel");
+			return false;
+			//if (!EnableInput) return false;
+			/*float axis = Input.GetAxis("Mouse ScrollWheel");
 			if (axis <= -wheelSensitive )
 			{
 				return true;
@@ -91,7 +92,7 @@ namespace Utage
 			else
 			{
 				return false;
-			}
+			}*/
 		}
 
 		public static bool IsInputKeyboadReturnDown()

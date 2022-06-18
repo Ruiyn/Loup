@@ -32,17 +32,17 @@
 #endif
 #define SPINE_OPTIONAL_RENDEROVERRIDE
 
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace Spine.Unity {
 
-#if NEW_PREFAB_SYSTEM
+	#if NEW_PREFAB_SYSTEM
 	[ExecuteAlways]
-#else
+	#else
 	[ExecuteInEditMode]
-#endif
-	[HelpURL("http://esotericsoftware.com/spine-unity#SkeletonRenderSeparator")]
+	#endif
+	[HelpURL("http://esotericsoftware.com/spine-unity-skeletonrenderseparator")]
 	public class SkeletonRenderSeparator : MonoBehaviour {
 		public const int DefaultSortingOrderIncrement = 5;
 
@@ -52,10 +52,10 @@ namespace Spine.Unity {
 		public SkeletonRenderer SkeletonRenderer {
 			get { return skeletonRenderer; }
 			set {
-#if SPINE_OPTIONAL_RENDEROVERRIDE
+				#if SPINE_OPTIONAL_RENDEROVERRIDE
 				if (skeletonRenderer != null)
 					skeletonRenderer.GenerateMeshOverride -= HandleRender;
-#endif
+				#endif
 
 				skeletonRenderer = value;
 				if (value == null)
@@ -69,18 +69,12 @@ namespace Spine.Unity {
 		public bool copyMeshRendererFlags = true;
 		public List<Spine.Unity.SkeletonPartsRenderer> partsRenderers = new List<SkeletonPartsRenderer>();
 
-#if UNITY_EDITOR
+		#if UNITY_EDITOR
 		void Reset () {
 			if (skeletonRenderer == null)
 				skeletonRenderer = GetComponent<SkeletonRenderer>();
 		}
-#endif
-		#endregion
-
-		#region Callback Delegates
-		/// <summary>OnMeshAndMaterialsUpdated is called at the end of LateUpdate after the Mesh and
-		/// all materials have been updated.</summary>
-		public event SkeletonRenderer.SkeletonRendererDelegate OnMeshAndMaterialsUpdated;
+		#endif
 		#endregion
 
 		#region Runtime Instantiation
@@ -119,14 +113,14 @@ namespace Spine.Unity {
 
 			srs.OnEnable();
 
-#if UNITY_EDITOR
+			#if UNITY_EDITOR
 			// Make sure editor updates properly in edit mode.
 			if (!Application.isPlaying) {
 				skeletonRenderer.enabled = false;
 				skeletonRenderer.enabled = true;
 				skeletonRenderer.LateUpdate();
 			}
-#endif
+			#endif
 
 			return srs;
 		}
@@ -161,10 +155,10 @@ namespace Spine.Unity {
 			if (copiedBlock == null) copiedBlock = new MaterialPropertyBlock();
 			mainMeshRenderer = skeletonRenderer.GetComponent<MeshRenderer>();
 
-#if SPINE_OPTIONAL_RENDEROVERRIDE
+			#if SPINE_OPTIONAL_RENDEROVERRIDE
 			skeletonRenderer.GenerateMeshOverride -= HandleRender;
 			skeletonRenderer.GenerateMeshOverride += HandleRender;
-#endif
+			#endif
 
 			if (copyMeshRendererFlags) {
 				var lightProbeUsage = mainMeshRenderer.lightProbeUsage;
@@ -191,9 +185,9 @@ namespace Spine.Unity {
 
 		public void OnDisable () {
 			if (skeletonRenderer == null) return;
-#if SPINE_OPTIONAL_RENDEROVERRIDE
+			#if SPINE_OPTIONAL_RENDEROVERRIDE
 			skeletonRenderer.GenerateMeshOverride -= HandleRender;
-#endif
+			#endif
 
 			skeletonRenderer.LateUpdate();
 
@@ -252,9 +246,6 @@ namespace Spine.Unity {
 					}
 				}
 			}
-
-			if (OnMeshAndMaterialsUpdated != null)
-				OnMeshAndMaterialsUpdated(this.skeletonRenderer);
 
 			// Clear extra renderers if they exist.
 			for (; rendererIndex < rendererCount; rendererIndex++) {

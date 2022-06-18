@@ -36,12 +36,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Spine.Unity {
-#if NEW_PREFAB_SYSTEM
+	#if NEW_PREFAB_SYSTEM
 	[ExecuteAlways]
-#else
+	#else
 	[ExecuteInEditMode]
-#endif
-	[HelpURL("http://esotericsoftware.com/spine-unity#SkeletonGraphicCustomMaterials")]
+	#endif
 	public class SkeletonGraphicCustomMaterials : MonoBehaviour {
 
 		#region Inspector
@@ -49,7 +48,7 @@ namespace Spine.Unity {
 		[SerializeField] protected List<AtlasMaterialOverride> customMaterialOverrides = new List<AtlasMaterialOverride>();
 		[SerializeField] protected List<AtlasTextureOverride> customTextureOverrides = new List<AtlasTextureOverride>();
 
-#if UNITY_EDITOR
+		#if UNITY_EDITOR
 		void Reset () {
 			skeletonGraphic = GetComponent<SkeletonGraphic>();
 
@@ -89,7 +88,7 @@ namespace Spine.Unity {
 				customTextureOverrides = initialAtlasTextureOverrides;
 			}
 		}
-#endif
+		#endif
 		#endregion
 
 		void SetCustomMaterialOverrides () {

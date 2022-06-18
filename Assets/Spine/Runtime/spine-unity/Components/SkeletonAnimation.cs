@@ -35,13 +35,12 @@ using UnityEngine;
 
 namespace Spine.Unity {
 
-#if NEW_PREFAB_SYSTEM
+	#if NEW_PREFAB_SYSTEM
 	[ExecuteAlways]
-#else
+	#else
 	[ExecuteInEditMode]
-#endif
+	#endif
 	[AddComponentMenu("Spine/SkeletonAnimation")]
-	[HelpURL("http://esotericsoftware.com/spine-unity#SkeletonAnimation-Component")]
 	public class SkeletonAnimation : SkeletonRenderer, ISkeletonAnimation, IAnimationStateComponent {
 
 		#region IAnimationStateComponent
@@ -52,26 +51,14 @@ namespace Spine.Unity {
 		/// <summary>
 		/// This is the Spine.AnimationState object of this SkeletonAnimation. You can control animations through it.
 		/// Note that this object, like .skeleton, is not guaranteed to exist in Awake. Do all accesses and caching to it in Start</summary>
-		public Spine.AnimationState AnimationState {
-			get {
-				Initialize(false);
-				return this.state;
-			}
-		}
+		public Spine.AnimationState AnimationState { get { return this.state; } }
 		private bool wasUpdatedAfterInit = true;
 		#endregion
 
 		#region Bone Callbacks ISkeletonAnimation
-		protected event UpdateBonesDelegate _BeforeApply;
 		protected event UpdateBonesDelegate _UpdateLocal;
 		protected event UpdateBonesDelegate _UpdateWorld;
 		protected event UpdateBonesDelegate _UpdateComplete;
-
-		/// <summary>
-		/// Occurs before the animations are applied.
-		/// Use this callback when you want to change the skeleton state before animations are applied on top.
-		/// </summary>
-		public event UpdateBonesDelegate BeforeApply { add { _BeforeApply += value; } remove { _BeforeApply -= value; } }
 
 		/// <summary>
 		/// Occurs after the animations are applied and before world space values are resolved.
@@ -110,10 +97,9 @@ namespace Spine.Unity {
 				}
 			}
 			set {
-				Initialize(false);
 				if (_animationName == value) {
 					TrackEntry entry = state.GetCurrent(0);
-					if (entry != null && entry.Loop == loop)
+					if (entry != null && entry.loop == loop)
 						return;
 				}
 				_animationName = value;
@@ -140,16 +126,14 @@ namespace Spine.Unity {
 		#region Runtime Instantiation
 		/// <summary>Adds and prepares a SkeletonAnimation component to a GameObject at runtime.</summary>
 		/// <returns>The newly instantiated SkeletonAnimation</returns>
-		public static SkeletonAnimation AddToGameObject (GameObject gameObject, SkeletonDataAsset skeletonDataAsset,
-			bool quiet = false) {
-			return SkeletonRenderer.AddSpineComponent<SkeletonAnimation>(gameObject, skeletonDataAsset, quiet);
+		public static SkeletonAnimation AddToGameObject (GameObject gameObject, SkeletonDataAsset skeletonDataAsset) {
+			return SkeletonRenderer.AddSpineComponent<SkeletonAnimation>(gameObject, skeletonDataAsset);
 		}
 
 		/// <summary>Instantiates a new UnityEngine.GameObject and adds a prepared SkeletonAnimation component to it.</summary>
 		/// <returns>The newly instantiated SkeletonAnimation component.</returns>
-		public static SkeletonAnimation NewSkeletonAnimationGameObject (SkeletonDataAsset skeletonDataAsset,
-			bool quiet = false) {
-			return SkeletonRenderer.NewSpineGameObject<SkeletonAnimation>(skeletonDataAsset, quiet);
+		public static SkeletonAnimation NewSkeletonAnimationGameObject (SkeletonDataAsset skeletonDataAsset) {
+			return SkeletonRenderer.NewSpineGameObject<SkeletonAnimation>(skeletonDataAsset);
 		}
 		#endregion
 
@@ -163,14 +147,10 @@ namespace Spine.Unity {
 		/// <summary>
 		/// Initialize this component. Attempts to load the SkeletonData and creates the internal Spine objects and buffers.</summary>
 		/// <param name="overwrite">If set to <c>true</c>, force overwrite an already initialized object.</param>
-		public override void Initialize (bool overwrite, bool quiet = false) {
+		public override void Initialize (bool overwrite) {
 			if (valid && !overwrite)
 				return;
-#if UNITY_EDITOR
-			if (BuildUtilities.IsInSkeletonAssetBuildPreProcessing)
-				return;
-#endif
-			base.Initialize(overwrite, quiet);
+			base.Initialize(overwrite);
 
 			if (!valid)
 				return;
@@ -181,21 +161,21 @@ namespace Spine.Unity {
 				var animationObject = skeletonDataAsset.GetSkeletonData(false).FindAnimation(_animationName);
 				if (animationObject != null) {
 					state.SetAnimation(0, animationObject, loop);
-#if UNITY_EDITOR
+					#if UNITY_EDITOR
 					if (!Application.isPlaying)
 						Update(0f);
-#endif
+					#endif
 				}
 			}
 		}
 
 		void Update () {
-#if UNITY_EDITOR
+			#if UNITY_EDITOR
 			if (!Application.isPlaying) {
 				Update(0f);
 				return;
 			}
-#endif
+			#endif
 
 			Update(Time.deltaTime);
 		}
@@ -205,32 +185,10 @@ namespace Spine.Unity {
 			if (!valid || state == null)
 				return;
 
-			wasUpdatedAfterInit = true;
-			if (updateMode < UpdateMode.OnlyAnimationStatus)
-				return;
-			UpdateAnimationStatus(deltaTime);
-
-			if (updateMode == UpdateMode.OnlyAnimationStatus) {
-				state.ApplyEventTimelinesOnly(skeleton, issueEvents: false);
-				return;
-			}
-			ApplyAnimation();
-		}
-
-		protected void UpdateAnimationStatus (float deltaTime) {
 			deltaTime *= timeScale;
 			skeleton.Update(deltaTime);
 			state.Update(deltaTime);
-		}
-
-		protected void ApplyAnimation () {
-			if (_BeforeApply != null)
-				_BeforeApply(this);
-
-			if (updateMode != UpdateMode.OnlyEventTimelines)
-				state.Apply(skeleton);
-			else
-				state.ApplyEventTimelinesOnly(skeleton, issueEvents: true);
+			state.Apply(skeleton);
 
 			if (_UpdateLocal != null)
 				_UpdateLocal(this);
@@ -245,24 +203,13 @@ namespace Spine.Unity {
 			if (_UpdateComplete != null) {
 				_UpdateComplete(this);
 			}
+			wasUpdatedAfterInit = true;
 		}
 
 		public override void LateUpdate () {
 			// instantiation can happen from Update() after this component, leading to a missing Update() call.
 			if (!wasUpdatedAfterInit) Update(0);
 			base.LateUpdate();
-		}
-
-		public override void OnBecameVisible () {
-			UpdateMode previousUpdateMode = updateMode;
-			updateMode = UpdateMode.FullUpdate;
-
-			// OnBecameVisible is called after LateUpdate()
-			if (previousUpdateMode != UpdateMode.FullUpdate &&
-				previousUpdateMode != UpdateMode.EverythingExceptMesh)
-				Update(0);
-			if (previousUpdateMode != UpdateMode.FullUpdate)
-				LateUpdate();
 		}
 	}
 

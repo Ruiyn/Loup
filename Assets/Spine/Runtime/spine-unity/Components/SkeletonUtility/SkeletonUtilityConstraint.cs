@@ -35,13 +35,12 @@ using UnityEngine;
 
 namespace Spine.Unity {
 
-#if NEW_PREFAB_SYSTEM
+	#if NEW_PREFAB_SYSTEM
 	[ExecuteAlways]
-#else
+	#else
 	[ExecuteInEditMode]
-#endif
+	#endif
 	[RequireComponent(typeof(SkeletonUtilityBone))]
-	[HelpURL("http://esotericsoftware.com/spine-unity#SkeletonUtilityConstraint")]
 	public abstract class SkeletonUtilityConstraint : MonoBehaviour {
 
 		protected SkeletonUtilityBone bone;

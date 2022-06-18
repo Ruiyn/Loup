@@ -31,9 +31,8 @@
 #define NEW_PREFAB_SYSTEM
 #endif
 
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
+using UnityEditor;
 
 namespace Spine.Unity.Editor {
 	using Event = UnityEngine.Event;
@@ -41,8 +40,7 @@ namespace Spine.Unity.Editor {
 
 	[CustomEditor(typeof(BoundingBoxFollower))]
 	public class BoundingBoxFollowerInspector : UnityEditor.Editor {
-		SerializedProperty skeletonRenderer, slotName,
-			isTrigger, usedByEffector, usedByComposite, clearStateOnDisable;
+		SerializedProperty skeletonRenderer, slotName, isTrigger, clearStateOnDisable;
 		BoundingBoxFollower follower;
 		bool rebuildRequired = false;
 		bool addBoneFollower = false;
@@ -61,19 +59,17 @@ namespace Spine.Unity.Editor {
 			skeletonRenderer = serializedObject.FindProperty("skeletonRenderer");
 			slotName = serializedObject.FindProperty("slotName");
 			isTrigger = serializedObject.FindProperty("isTrigger");
-			usedByEffector = serializedObject.FindProperty("usedByEffector");
-			usedByComposite = serializedObject.FindProperty("usedByComposite");
 			clearStateOnDisable = serializedObject.FindProperty("clearStateOnDisable");
 			follower = (BoundingBoxFollower)target;
 		}
 
 		public override void OnInspectorGUI () {
 
-#if !NEW_PREFAB_SYSTEM
+			#if !NEW_PREFAB_SYSTEM
 			bool isInspectingPrefab = (PrefabUtility.GetPrefabType(target) == PrefabType.Prefab);
-#else
+			#else
 			bool isInspectingPrefab = false;
-#endif
+			#endif
 
 			// Note: when calling InitializeEditor() in OnEnable, it throws exception
 			// "SerializedObjectNotCreatableException: Object at index 0 is null".
@@ -112,32 +108,27 @@ namespace Spine.Unity.Editor {
 			if (EditorGUI.EndChangeCheck()) {
 				serializedObject.ApplyModifiedProperties();
 				InitializeEditor();
-#if !NEW_PREFAB_SYSTEM
+				#if !NEW_PREFAB_SYSTEM
 				if (!isInspectingPrefab)
 					rebuildRequired = true;
-#endif
+				#endif
 			}
 
 			using (new SpineInspectorUtility.LabelWidthScope(150f)) {
 				EditorGUI.BeginChangeCheck();
 				EditorGUILayout.PropertyField(isTrigger);
-				EditorGUILayout.PropertyField(usedByEffector);
-				EditorGUILayout.PropertyField(usedByComposite);
-				bool colliderParamChanged = EditorGUI.EndChangeCheck();
+				bool triggerChanged = EditorGUI.EndChangeCheck();
 
 				EditorGUI.BeginChangeCheck();
 				EditorGUILayout.PropertyField(clearStateOnDisable, new GUIContent(clearStateOnDisable.displayName, "Enable this if you are pooling your Spine GameObject"));
 				bool clearStateChanged = EditorGUI.EndChangeCheck();
 
-				if (clearStateChanged || colliderParamChanged) {
+				if (clearStateChanged || triggerChanged) {
 					serializedObject.ApplyModifiedProperties();
 					InitializeEditor();
-					if (colliderParamChanged)
-						foreach (var col in follower.colliderTable.Values) {
+					if (triggerChanged)
+						foreach (var col in follower.colliderTable.Values)
 							col.isTrigger = isTrigger.boolValue;
-							col.usedByEffector = usedByEffector.boolValue;
-							col.usedByComposite = usedByComposite.boolValue;
-						}
 				}
 			}
 
@@ -207,64 +198,28 @@ namespace Spine.Unity.Editor {
 			var go = AddBoundingBoxFollowerChild((SkeletonRenderer)command.context);
 			Undo.RegisterCreatedObjectUndo(go, "Add BoundingBoxFollower");
 		}
-
-		[MenuItem("CONTEXT/SkeletonRenderer/Add all BoundingBoxFollower GameObjects")]
-		static void AddAllBoundingBoxFollowerChildren (MenuCommand command) {
-			var objects = AddAllBoundingBoxFollowerChildren((SkeletonRenderer)command.context);
-			foreach (var go in objects)
-				Undo.RegisterCreatedObjectUndo(go, "Add BoundingBoxFollower");
-		}
 		#endregion
 
-		public static GameObject AddBoundingBoxFollowerChild (SkeletonRenderer skeletonRenderer,
-			BoundingBoxFollower original = null, string name = "BoundingBoxFollower",
-			string slotName = null) {
-
-			var go = EditorInstantiation.NewGameObject(name, true);
-			go.transform.SetParent(skeletonRenderer.transform, false);
+		static GameObject AddBoundingBoxFollowerChild (SkeletonRenderer sr, BoundingBoxFollower original = null) {
+			var go = EditorInstantiation.NewGameObject("BoundingBoxFollower", true);
+			go.transform.SetParent(sr.transform, false);
 			var newFollower = go.AddComponent<BoundingBoxFollower>();
 
 			if (original != null) {
 				newFollower.slotName = original.slotName;
 				newFollower.isTrigger = original.isTrigger;
-				newFollower.usedByEffector = original.usedByEffector;
-				newFollower.usedByComposite = original.usedByComposite;
 				newFollower.clearStateOnDisable = original.clearStateOnDisable;
 			}
-			if (slotName != null)
-				newFollower.slotName = slotName;
 
-			newFollower.skeletonRenderer = skeletonRenderer;
+			newFollower.skeletonRenderer = sr;
 			newFollower.Initialize();
+
 
 			Selection.activeGameObject = go;
 			EditorGUIUtility.PingObject(go);
 			return go;
 		}
 
-		public static List<GameObject> AddAllBoundingBoxFollowerChildren (
-			SkeletonRenderer skeletonRenderer, BoundingBoxFollower original = null) {
-
-			List<GameObject> createdGameObjects = new List<GameObject>();
-			foreach (var skin in skeletonRenderer.Skeleton.Data.Skins) {
-				var attachments = skin.Attachments;
-				foreach (var entry in attachments) {
-					var boundingBoxAttachment = entry.Attachment as BoundingBoxAttachment;
-					if (boundingBoxAttachment == null)
-						continue;
-					int slotIndex = entry.SlotIndex;
-					var slot = skeletonRenderer.Skeleton.Slots.Items[slotIndex];
-					string slotName = slot.Data.Name;
-					GameObject go = AddBoundingBoxFollowerChild(skeletonRenderer,
-						original, boundingBoxAttachment.Name, slotName);
-					var boneFollower = go.AddComponent<BoneFollower>();
-					boneFollower.skeletonRenderer = skeletonRenderer;
-					boneFollower.SetBone(slot.Data.BoneData.Name);
-					createdGameObjects.Add(go);
-				}
-			}
-			return createdGameObjects;
-		}
 	}
 
 }

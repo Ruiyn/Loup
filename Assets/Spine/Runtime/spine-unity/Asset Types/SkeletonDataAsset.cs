@@ -41,16 +41,13 @@ namespace Spine.Unity {
 		#region Inspector
 		public AtlasAssetBase[] atlasAssets = new AtlasAssetBase[0];
 
-#if SPINE_TK2D
+		#if SPINE_TK2D
 		public tk2dSpriteCollectionData spriteCollection;
 		public float scale = 1f;
-#else
+		#else
 		public float scale = 0.01f;
-#endif
+		#endif
 		public TextAsset skeletonJSON;
-
-		public bool isUpgradingBlendModeMaterials = false;
-		public BlendModeMaterials blendModeMaterials = new BlendModeMaterials();
 
 		[Tooltip("Use SkeletonDataModifierAssets to apply changes to the SkeletonData after being loaded, such as apply blend mode Materials to Attachments under slots with special blend modes.")]
 		public List<SkeletonDataModifierAsset> skeletonDataModifiers = new List<SkeletonDataModifierAsset>();
@@ -77,7 +74,7 @@ namespace Spine.Unity {
 		/// <summary>
 		/// Creates a runtime SkeletonDataAsset.</summary>
 		public static SkeletonDataAsset CreateRuntimeInstance (TextAsset skeletonDataFile, AtlasAssetBase atlasAsset, bool initialize, float scale = 0.01f) {
-			return CreateRuntimeInstance(skeletonDataFile, new[] { atlasAsset }, initialize, scale);
+			return CreateRuntimeInstance(skeletonDataFile, new [] {atlasAsset}, initialize, scale);
 		}
 
 		/// <summary>
@@ -145,10 +142,10 @@ namespace Spine.Unity {
 			float skeletonDataScale;
 			Atlas[] atlasArray = this.GetAtlasArray();
 
-#if !SPINE_TK2D
+			#if !SPINE_TK2D
 			attachmentLoader = (atlasArray.Length == 0) ? (AttachmentLoader)new RegionlessAttachmentLoader() : (AttachmentLoader)new AtlasAttachmentLoader(atlasArray);
 			skeletonDataScale = scale;
-#else
+			#else
 			if (spriteCollection != null) {
 				attachmentLoader = new Spine.Unity.TK2D.SpriteCollectionAttachmentLoader(spriteCollection);
 				skeletonDataScale = (1.0f / (spriteCollection.invOrthoSize * spriteCollection.halfTargetHeight) * scale);
@@ -161,50 +158,39 @@ namespace Spine.Unity {
 				attachmentLoader = new AtlasAttachmentLoader(atlasArray);
 				skeletonDataScale = scale;
 			}
-#endif
+			#endif
 
-			bool hasBinaryExtension = skeletonJSON.name.ToLower().Contains(".skel");
+			bool isBinary = skeletonJSON.name.ToLower().Contains(".skel");
 			SkeletonData loadedSkeletonData = null;
 
 			try {
-				if (hasBinaryExtension)
+				if (isBinary)
 					loadedSkeletonData = SkeletonDataAsset.ReadSkeletonData(skeletonJSON.bytes, attachmentLoader, skeletonDataScale);
 				else
 					loadedSkeletonData = SkeletonDataAsset.ReadSkeletonData(skeletonJSON.text, attachmentLoader, skeletonDataScale);
 			} catch (Exception ex) {
 				if (!quiet)
-					Debug.LogError("Error reading skeleton JSON file for SkeletonData asset: " + name + "\n" + ex.Message + "\n" + ex.StackTrace, skeletonJSON);
+					Debug.LogError("Error reading skeleton JSON file for SkeletonData asset: " + name + "\n" + ex.Message + "\n" + ex.StackTrace, this);
 			}
 
-#if UNITY_EDITOR
+			#if UNITY_EDITOR
 			if (loadedSkeletonData == null && !quiet && skeletonJSON != null) {
-				string problemDescription = null;
-				bool isSpineSkeletonData;
-				SkeletonDataCompatibility.VersionInfo fileVersion = SkeletonDataCompatibility.GetVersionInfo(skeletonJSON, out isSpineSkeletonData, ref problemDescription);
-				if (problemDescription != null) {
-					if (!quiet)
-						Debug.LogError(problemDescription, skeletonJSON);
-					return null;
-				}
+				SkeletonDataCompatibility.VersionInfo fileVersion = SkeletonDataCompatibility.GetVersionInfo(skeletonJSON);
 				CompatibilityProblemInfo compatibilityProblemInfo = SkeletonDataCompatibility.GetCompatibilityProblemInfo(fileVersion);
 				if (compatibilityProblemInfo != null) {
 					SkeletonDataCompatibility.DisplayCompatibilityProblem(compatibilityProblemInfo.DescriptionString(), skeletonJSON);
 					return null;
 				}
 			}
-#endif
+			#endif
 			if (loadedSkeletonData == null)
 				return null;
 
 			if (skeletonDataModifiers != null) {
-				foreach (var modifier in skeletonDataModifiers) {
-					if (modifier != null && !(isUpgradingBlendModeMaterials && modifier is BlendModeMaterialsAsset)) {
-						modifier.Apply(loadedSkeletonData);
-					}
+				foreach (var m in skeletonDataModifiers) {
+					if (m != null) m.Apply(loadedSkeletonData);
 				}
 			}
-			if (!isUpgradingBlendModeMaterials)
-				blendModeMaterials.ApplyMaterials(loadedSkeletonData);
 
 			this.InitializeWithData(loadedSkeletonData);
 
@@ -219,7 +205,7 @@ namespace Spine.Unity {
 
 		public void FillStateData () {
 			if (stateData != null) {
-				stateData.DefaultMix = defaultMix;
+				stateData.defaultMix = defaultMix;
 
 				for (int i = 0, n = fromAnimation.Length; i < n; i++) {
 					if (fromAnimation[i].Length == 0 || toAnimation[i].Length == 0)
@@ -257,6 +243,7 @@ namespace Spine.Unity {
 			};
 			return json.ReadSkeletonData(input);
 		}
+
 	}
 
 }

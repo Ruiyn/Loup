@@ -27,9 +27,9 @@
  * THE SPINE RUNTIMES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *****************************************************************************/
 
-using Spine.Unity.AnimationTools;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
+using Spine.Unity.AnimationTools;
 
 namespace Spine.Unity {
 
@@ -45,7 +45,6 @@ namespace Spine.Unity {
 	/// For <c>SkeletonAnimation</c> or <c>SkeletonGraphic</c> please use
 	/// <see cref="SkeletonRootMotion">SkeletonRootMotion</see> instead.
 	/// </remarks>
-	[HelpURL("http://esotericsoftware.com/spine-unity#SkeletonMecanimRootMotion")]
 	public class SkeletonMecanimRootMotion : SkeletonRootMotionBase {
 		#region Inspector
 		const int DefaultMecanimLayerFlags = -1;
@@ -59,27 +58,6 @@ namespace Spine.Unity {
 			get {
 				return skeletonMecanim ? skeletonMecanim : skeletonMecanim = GetComponent<SkeletonMecanim>();
 			}
-		}
-
-		public override Vector2 GetRemainingRootMotion (int layerIndex) {
-			var pair = skeletonMecanim.Translator.GetActiveAnimationAndTime(layerIndex);
-			var animation = pair.Key;
-			var time = pair.Value;
-			if (animation == null)
-				return Vector2.zero;
-
-			float start = time;
-			float end = animation.Duration;
-			return GetAnimationRootMotion(start, end, animation);
-		}
-
-		public override RootMotionInfo GetRootMotionInfo (int layerIndex) {
-			var pair = skeletonMecanim.Translator.GetActiveAnimationAndTime(layerIndex);
-			var animation = pair.Key;
-			var time = pair.Value;
-			if (animation == null)
-				return new RootMotionInfo();
-			return GetAnimationRootMotionInfo(animation, time);
 		}
 
 		protected override void Reset () {
@@ -96,16 +74,18 @@ namespace Spine.Unity {
 			}
 		}
 
-		void OnClipApplied (Spine.Animation animation, int layerIndex, float weight,
+		void OnClipApplied(Spine.Animation clip, int layerIndex, float weight,
 				float time, float lastTime, bool playsBackward) {
 
-			if (((mecanimLayerFlags & 1 << layerIndex) == 0) || weight == 0)
+			if (((mecanimLayerFlags & 1<<layerIndex) == 0) || weight == 0)
 				return;
 
-			if (!playsBackward) {
-				movementDelta += weight * GetAnimationRootMotion(lastTime, time, animation);
-			} else {
-				movementDelta -= weight * GetAnimationRootMotion(time, lastTime, animation);
+			var timeline = clip.FindTranslateTimelineForBone(rootMotionBoneIndex);
+			if (timeline != null) {
+				if (!playsBackward)
+					movementDelta += weight * GetTimelineMovementDelta(lastTime, time, timeline, clip);
+				else
+					movementDelta -= weight * GetTimelineMovementDelta(time, lastTime, timeline, clip);
 			}
 		}
 

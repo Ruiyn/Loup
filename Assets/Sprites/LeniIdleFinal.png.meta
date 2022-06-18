@@ -1,0 +1,672 @@
+fileFormatVersion: 2
+guid: e7af1f1e79219c7449283f53bd86503e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7988673698702373908
+    second: LeniIdleFinal_0
+  - first:
+      213: -5654447393490628322
+    second: LeniIdleFinal_1
+  - first:
+      213: -2031103928702581831
+    second: LeniIdleFinal_2
+  - first:
+      213: -7152310212490550606
+    second: LeniIdleFinal_3
+  - first:
+      213: -1644628805201370345
+    second: LeniIdleFinal_4
+  - first:
+      213: 7384356692342796228
+    second: LeniIdleFinal_5
+  - first:
+      213: 5362927322899322127
+    second: LeniIdleFinal_6
+  - first:
+      213: -3547921055655980344
+    second: LeniIdleFinal_7
+  - first:
+      213: -7399022357053966745
+    second: LeniIdleFinal_8
+  - first:
+      213: -3268468814564617603
+    second: LeniIdleFinal_9
+  - first:
+      213: -8717823144738222992
+    second: LeniIdleFinal_10
+  - first:
+      213: -578851864287315221
+    second: LeniIdleFinal_11
+  - first:
+      213: 5680455600051982421
+    second: LeniIdleFinal_12
+  - first:
+      213: 9066394852326888300
+    second: LeniIdleFinal_13
+  - first:
+      213: 6759815610894827147
+    second: LeniIdleFinal_14
+  - first:
+      213: -1637736427185483554
+    second: LeniIdleFinal_15
+  - first:
+      213: 6549349785438553879
+    second: LeniIdleFinal_16
+  - first:
+      213: -4483940502803831335
+    second: LeniIdleFinal_17
+  - first:
+      213: -886727395333155104
+    second: LeniIdleFinal_18
+  - first:
+      213: 9165566853925878153
+    second: LeniIdleFinal_19
+  - first:
+      213: -2527741451356020256
+    second: LeniIdleFinal_20
+  - first:
+      213: -6434964800104351205
+    second: LeniIdleFinal_21
+  - first:
+      213: -7550969732538686438
+    second: LeniIdleFinal_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LeniIdleFinal_0
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 403
+        width: 34
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41439a537687dde60800000000000000
+      internalID: 7988673698702373908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 403
+        width: 34
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e119bdddd0e5781b0800000000000000
+      internalID: -5654447393490628322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 403
+        width: 34
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b348c3fcb110d3e0800000000000000
+      internalID: -2031103928702581831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_3
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 403
+        width: 34
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b22a1d91c3edbc90800000000000000
+      internalID: -7152310212490550606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_4
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 326
+        width: 34
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713e896b0da1d29e0800000000000000
+      internalID: -1644628805201370345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 326
+        width: 34
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfeed5a9418a7660800000000000000
+      internalID: 7384356692342796228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_6
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 326
+        width: 34
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0596a57cf1fc6a40800000000000000
+      internalID: 5362927322899322127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 326
+        width: 34
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c21f7af89043cec0800000000000000
+      internalID: -3547921055655980344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_8
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 255
+        width: 34
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766ff923e54615990800000000000000
+      internalID: -7399022357053966745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_9
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 255
+        width: 34
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d721f642ee014a2d0800000000000000
+      internalID: -3268468814564617603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_10
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 255
+        width: 34
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c0333f902140780800000000000000
+      internalID: -8717823144738222992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 255
+        width: 34
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beaf49bdb4187f7f0800000000000000
+      internalID: -578851864287315221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 174
+        width: 34
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5501a7b954805de40800000000000000
+      internalID: 5680455600051982421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_13
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 174
+        width: 34
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63df56151e42dd70800000000000000
+      internalID: 9066394852326888300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_14
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 174
+        width: 40
+        height: 65
+      alignment: 9
+      pivot: {x: 0.44, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8eb68aab70bfcd50800000000000000
+      internalID: 6759815610894827147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_15
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 174
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: 0.40809703, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed054e585679549e0800000000000000
+      internalID: -1637736427185483554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 85
+        width: 40
+        height: 65
+      alignment: 9
+      pivot: {x: 0.44256878, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71788de0ee6f3ea50800000000000000
+      internalID: 6549349785438553879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_17
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 85
+        width: 39
+        height: 66
+      alignment: 9
+      pivot: {x: 0.51218784, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d52460aed7d5c1c0800000000000000
+      internalID: -4483940502803831335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_18
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 85
+        width: 46
+        height: 67
+      alignment: 9
+      pivot: {x: 0.62478274, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e65f8cc126b1b3f0800000000000000
+      internalID: -886727395333155104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_19
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 85
+        width: 45
+        height: 67
+      alignment: 9
+      pivot: {x: 0.63000894, y: -0.006590089}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989b85d0e72a23f70800000000000000
+      internalID: 9165566853925878153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 11
+        width: 34
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1e4e3ea88abecd0800000000000000
+      internalID: -2527741451356020256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_21
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 11
+        width: 33
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a33a3bb9962b6a0800000000000000
+      internalID: -6434964800104351205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeniIdleFinal_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 10
+        width: 34
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a142e46f801953790800000000000000
+      internalID: -7550969732538686438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

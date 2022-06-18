@@ -16,6 +16,11 @@ public class AdvEngineController : MonoBehaviour
 
     float defaultSpeed = -1;
 
+    public void Awake()
+    {
+        advEngine = GameObject.FindGameObjectWithTag("AdvEngine").GetComponent<AdvEngine>();
+    }
+
     public void JumpScenario(string label)
     {
         StartCoroutine(JumpScenarioAsync(label, null));

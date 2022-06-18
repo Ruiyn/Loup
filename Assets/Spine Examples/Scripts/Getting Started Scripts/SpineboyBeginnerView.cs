@@ -27,9 +27,9 @@
  * THE SPINE RUNTIMES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *****************************************************************************/
 
-using Spine.Unity;
-using System.Collections;
 using UnityEngine;
+using System.Collections;
+using Spine.Unity;
 
 namespace Spine.Unity.Examples {
 	public class SpineboyBeginnerView : MonoBehaviour {
@@ -70,7 +70,7 @@ namespace Spine.Unity.Examples {
 			if (skeletonAnimation == null) return;
 			if (model == null) return;
 
-			if ((skeletonAnimation.skeleton.ScaleX < 0) != model.facingLeft) {  // Detect changes in model.facingLeft
+			if ((skeletonAnimation.skeleton.ScaleX < 0) != model.facingLeft) {	// Detect changes in model.facingLeft
 				Turn(model.facingLeft);
 			}
 
@@ -126,13 +126,15 @@ namespace Spine.Unity.Examples {
 			var shootTrack = skeletonAnimation.AnimationState.SetAnimation(1, shoot, false);
 			shootTrack.AttachmentThreshold = 1f;
 			shootTrack.MixDuration = 0f;
-			skeletonAnimation.state.AddEmptyAnimation(1, 0.5f, 0.1f);
+			var empty1 = skeletonAnimation.state.AddEmptyAnimation(1, 0.5f, 0.1f);
+			empty1.AttachmentThreshold = 1f;
 
 			// Play the aim animation on track 2 to aim at the mouse target.
 			var aimTrack = skeletonAnimation.AnimationState.SetAnimation(2, aim, false);
 			aimTrack.AttachmentThreshold = 1f;
 			aimTrack.MixDuration = 0f;
-			skeletonAnimation.state.AddEmptyAnimation(2, 0.5f, 0.1f);
+			var empty2 = skeletonAnimation.state.AddEmptyAnimation(2, 0.5f, 0.1f);
+			empty2.AttachmentThreshold = 1f;
 
 			gunSource.pitch = GetRandomPitch(gunsoundPitchOffset);
 			gunSource.Play();
@@ -148,7 +150,8 @@ namespace Spine.Unity.Examples {
 		}
 
 		public void StopPlayingAim () {
-			skeletonAnimation.state.AddEmptyAnimation(2, 0.5f, 0.1f);
+			var empty2 = skeletonAnimation.state.AddEmptyAnimation(2, 0.5f, 0.1f);
+			empty2.AttachmentThreshold = 1f;
 		}
 
 		public void Turn (bool facingLeft) {

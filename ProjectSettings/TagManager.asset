@@ -9,7 +9,8 @@ TagManager:
   - Enemy
   - World
   - NoMask
-  - Fire
+  - AdvEngine
+  - Cutscene
   layers:
   - Default
   - TransparentFX
@@ -34,11 +35,11 @@ TagManager:
   - Camera2
   - Camera3
   - Camera4
-  - Utage
-  - UtageUI
-  - ChiaraRoom
-  - Hospital
-  - Bathroom
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -61,7 +62,4 @@ TagManager:
     locked: 0
   - name: Above
     uniqueID: 961700441
-    locked: 0
-  - name: Battle
-    uniqueID: 1850048079
     locked: 0

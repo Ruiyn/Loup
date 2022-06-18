@@ -27,12 +27,12 @@
  * THE SPINE RUNTIMES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *****************************************************************************/
 
-using Spine;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
+using Spine;
 
 namespace Spine.Unity.Editor {
 	using Event = UnityEngine.Event;
@@ -71,7 +71,7 @@ namespace Spine.Unity.Editor {
 			}
 
 			serializedObject.Update();
-			atlasAsset = (atlasAsset == null) ? (SpineSpriteAtlasAsset)target : atlasAsset;
+			atlasAsset = atlasAsset ?? (SpineSpriteAtlasAsset)target;
 
 			if (atlasAsset.RegionsNeedLoading) {
 				if (GUILayout.Button(SpineInspectorUtility.TempContent("Load regions by entering Play mode"), GUILayout.Height(20))) {
